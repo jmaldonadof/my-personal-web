@@ -7,51 +7,67 @@
     <script type="text/javascript" src="static/bootstrap.js"></script>
 </head>
 <body>
-	<h4> Twitter datasets </h4>
-	<ul>
-		<li> Titulares de noticias chilenas, publicados a través 
-de Twitter por medios de noticias Chilenos de diferentes regiones. <br>
-			<ul>
-				<li> Formato: Archivador TAR comprimido con gzip. Contiene archivos en formato json comprimidos con los tweets recolectados cada hora.
-				<li> Tamaño: 188,2 MB (188.223.474 bytes)
-				<li> Fecha: Desde el 30/10/2014 hasta el 20/05/2015  </li>
-				<li> Detalle de la lista de cuentas 
-de las que se obtuvieron los titulares: <a href="news_accounts.html"> 
-detalle cuentas </a></li>
-				<li> <a href="datasets/headlines.tar.gz"> Descargar Datos </a> </li>
-			</ul><br>
-		</li>
+	<div class = "container">
+		<h2> Twitter datasets </h2>
 		
-		<li> Dataset de eventos chilenos <br>
-			<ul>
-				<li> Formato: Archivador TAR comprimido con gzip. Contiene mysqldumps separados para cada tabla de la base de datos
-				<li> Incluye archivo README.txt que explica en que orden ejecutar los archivos
-				<li> Tamaño: 486,2 MB (486.171.927 bytes)
-				<li> Fecha: Desde el 2/03/2015 hasta el 8/03/2015  </li>
-				<li> <a href="datasets/one_week_data.tar.gz"> Descargar Datos </a> </li>
-			</ul><br>
-		</li>
-		
-		<li> Dataset de eventos chilenos <br>
-			<ul>
-				<li> Formato: Archivador TAR comprimido con gzip. Contiene mysqldumps separados para cada tabla de la base de datos
-				<li> Incluye archivo README.txt que explica en que orden ejecutar los archivos 
-				<li> Tamaño: 1,4 GB (1.432.213.530 bytes)
-				<li> Fecha: Desde el 24/03/2015 hasta el 28/04/2015.   </li>
-				<li> <a href="datasets/data_since_2015-03-24.tar.gz"> Descargar Datos </a> </li>
-				<li> Descargar archivos sin comprimir <a href="dataset.html"> dataset </a> </li>
-			</ul>
-		</li>
+		<!-- Lista de datasets -->
+		<ul>
+			<li> Titulares de noticias chilenas, publicados a través 
+	de Twitter por medios de noticias Chilenos de diferentes regiones. <br>
+				<ul>
+					<li> Formato: Archivador TAR comprimido con gzip. Contiene archivos en formato json comprimidos con los tweets recolectados cada hora.
+					<li> Tamaño: 188,2 MB (188.223.474 bytes)
+					<li> Fecha: Desde el 30/10/2014 hasta el 20/05/2015  </li>
+					<li> Detalle de la lista de cuentas 
+	de las que se obtuvieron los titulares: <a href="news_accounts.html"> 
+	detalle cuentas </a></li>
+					<li> <a href="datasets/headlines.tar.gz"> Descargar Datos </a> </li>
+				</ul><br>
+			</li>
+			
+			<li> Dataset de eventos chilenos <br>
+				<ul>
+					<li> Formato: Archivador TAR comprimido con gzip. Contiene mysqldumps separados para cada tabla de la base de datos
+					<li> Incluye archivo README.txt que explica en que orden ejecutar los archivos
+					<li> Tamaño: 486,2 MB (486.171.927 bytes)
+					<li> Fecha: Desde el 2/03/2015 hasta el 8/03/2015  </li>
+					<li> <a href="datasets/one_week_data.tar.gz"> Descargar Datos </a> </li>
+				</ul><br>
+			</li>
+			
+			<li> Dataset de eventos chilenos <br>
+				<ul>
+					<li> Formato: Archivador TAR comprimido con gzip. Contiene mysqldumps separados para cada tabla de la base de datos
+					<li> Incluye archivo README.txt que explica en que orden ejecutar los archivos 
+					<li> Tamaño: 1,4 GB (1.432.213.530 bytes)
+					<li> Fecha: Desde el 24/03/2015 hasta el 28/04/2015.   </li>
+					<li> <a href="datasets/data_since_2015-03-24.tar.gz"> Descargar Datos </a> </li>
+					<li> Descargar archivos sin comprimir <a href="dataset.html"> dataset </a> </li>
+				</ul><br>
+			</li>
 
-	</ul>
-<br>
-<br>
-<br>
-<footer class="footer">
-<div style="text-align:center">
-Jazmine Maldonado Flores <br>
-Última actualización 25 de Mayo del 2015 <br>
-Información de contacto: <a href="mailto:jamaldonadof@ug.uchile.cl"> jamaldonadof@ug.uchile.cl </a> 
+			<li> Usuarios con geolocalización <br>
+				<ul>
+					<li> Formato: Dump mysql que crea dos tablas, una con usuarios (con y sin location) y otra tabla con la información geográfica de un subconjunto de usuarios de la tabla de usuarios. 
+					Los usuarios que tienen información geográfica corresponden a aquellos que tienen coordenadas en el campo "location" o usuarios que escriben un nombre de lugar válido en el campo "location". 
+
+					Para obtener el detalle de la información geográfica de las localidades de los usuarios, se utilizó <a href="https://clavin.bericotechnologies.com/"> CLAVIN </a>. </li>
+					<li> Tamaño: 1,9 GB (1.923.902.838 bytes) </li>
+					<li> <a href="datasets/usuarios_geolocalizados.sql"> Descargar Datos </a> </li>
+				</ul>
+
+		</ul>
+
+
+	<!-- Footer con info de contacto -->	
+	<br>
+	<br>
+	<br>
+	<div style="text-align:center">
+	Jazmine Maldonado Flores <br>
+	Última actualización 25 de Mayo del 2015 <br>
+	Información de contacto: <a href="mailto:jamaldonadof@ug.uchile.cl"> jamaldonadof@ug.uchile.cl </a> 
+	</div>
 </div>
 </footer>
 
